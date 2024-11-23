@@ -1,0 +1,47 @@
+{
+	"schema_version": 1,
+	"quilt_loader": {
+		"group": "io.github",
+		"id": "shiba",
+		"version": "1.0.0",
+		"metadata": {
+			"name": "Shiba",
+			"description": "A short description of your mod.",
+			"contributors": {
+				"shibaHacziX": "Owner"
+			},
+			"contact": {
+				"homepage": "https://github.com/shibahaczix/",
+				"issues": "https://github.com/shibahaczix/",
+				"sources": "https://github.com/shibahaczix"
+			},
+			"icon": "assets/shiba/icon.png"
+		},
+		"intermediate_mappings": "net.fabricmc:intermediary",
+		"entrypoints": {
+			"init": {
+				"adapter": "kotlin",
+				"value": "io.github.shibahaczix.Shiba"
+			}
+		},
+		"depends": [
+			{
+				"id": "quilt_loader",
+				"versions": ">=0.19.2"
+			},
+			{
+				"id": "quilted_fabric_api",
+				"versions": ">=7.0.2"
+			},
+			{
+				"id": "qkl",
+				"versions": ">=2.1.0"
+			},
+			{
+				"id": "minecraft",
+				"versions": ">=1.20"
+			}
+		]
+	},
+	"mixin": "shiba.mixins.json"
+}
